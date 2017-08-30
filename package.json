@@ -1,0 +1,28 @@
+{
+  "name": "node-newspaper",
+  "version": "1.0.0",
+  "description": "Node MVC news portal",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felippeDev/node-newspaper.git"
+  },
+  "keywords": [
+    "node",
+    "mvc",
+    "news-portal"
+  ],
+  "author": "felippeDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felippeDev/node-newspaper/issues"
+  },
+  "homepage": "https://github.com/felippeDev/node-newspaper#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  }
+}
