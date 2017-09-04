@@ -1,6 +1,6 @@
 module.exports = (app) => {
     app.get('/admin/addPost', (req, res) => {
-        res.render('admin/addPost', { validationErrors: null });
+        res.render('admin/addPost', { validationErrors: {}, post: {}});
     });
 
     app.post('/admin/addPost', (req, res) => {
@@ -17,7 +17,7 @@ module.exports = (app) => {
         req.getValidationResult().then(function (result) {
             if (!result.isEmpty()) {
                 console.log('--> Validation failed - /admin/addPost [POST]');
-                res.render('admin/addPost', { validationErrors: result.array(), post: newPost });
+                res.render('admin/addPost', { validationErrors: result.error, post: newPost });
                 return;
             }
 

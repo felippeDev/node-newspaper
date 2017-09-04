@@ -8,11 +8,13 @@
         <h1>Add a new post</h1>
         <br />
 
-        <% if(validationErrors != null || validationErrors != undefined) { %>
+        <% if(validationErrors != undefined && validationErrors.length > 1) { %>
+            <% console.log('errors here!') %>
+            
             <p style="color:red;">Some errors occoured:</p>
             <ul>
                 <% for(var i = 0; i < validationErrors.length; i++) %>
-                <li style="color:red;"><%= validationErrors[i].msg %></li>
+                <li style="color:red;"><%= validationErrors[i].message %></li>
             </ul>
         <% } %>
 
