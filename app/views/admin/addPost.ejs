@@ -6,5 +6,43 @@
     </head>
     <body>
         <h1>Add a new post</h1>
+        <br />
+
+        <% if(validationErrors != null || validationErrors != undefined) { %>
+            <p style="color:red;">Some errors occoured:</p>
+            <ul>
+                <% for(var i = 0; i < validationErrors.length; i++) %>
+                <li style="color:red;"><%= validationErrors[i].msg %></li>
+            </ul>
+        <% } %>
+
+        <form action="/admin/addPost" method="POST">
+            <label for="postTitle">Title</label>
+            <br />
+            <input type="text" name="title" id="postTitle" placeholder="Post title">
+            <br /><br />
+            
+            <label for="postAuthor">Author</label>
+            <br />
+            <input type="text" name="author" id="postAuthor" placeholder="Post author name">
+            <br /><br />
+
+            <label for="postDate">Date</label>
+            <br />
+            <input type="date" name="post_date" id="postDate" placeholder="Date of post">
+            <br /><br />
+            
+            <label for="postSummary">Summary</label>
+            <br />
+            <input type="text" name="summary" id="postSummary" placeholder="Post summary">
+            <br /><br />
+
+            <label for="postContent">Content</label>
+            <br />
+            <textarea name="content" id="postContent" placeholder="Type the post content.." cols="30" rows="10"></textarea>
+            <br /><br />
+
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>

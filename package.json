@@ -22,8 +22,11 @@
   },
   "homepage": "https://github.com/felippeDev/node-newspaper#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "consign": "^0.1.6",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
+    "express-validator": "^4.1.1",
     "mysql": "^2.14.1"
   }
 }
