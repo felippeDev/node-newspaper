@@ -2,7 +2,8 @@
   "name": "node-newspaper",
   "version": "1.0.0",
   "engines": {
-    "node": "6.9.4"
+    "node": "6.9.4",
+    "npm": "3.10.10"
   },
   "description": "Node MVC news portal",
   "main": "app.js",
