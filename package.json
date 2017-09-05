@@ -1,11 +1,7 @@
 {
   "name": "node-newspaper",
   "version": "1.0.0",
-  "engines": {
-    "node": "6.9.4",
-    "npm": "3.10.10"
-  },
-  "description": "Node MVC news portal",
+  "description": "Node MVC Blog application",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -13,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felippeDev/node-newspaper.git"
+    "url": "https://github.com/felippeDev/node-newspaper.git"
   },
   "keywords": [
     "node",
@@ -30,7 +26,7 @@
     "body-parser": "^1.17.2",
     "consign": "^0.1.6",
     "ejs": "^2.5.7",
-    "express": "4.15.4",
+    "express": "^4.15.4",
     "express-validator": "^4.1.1",
     "mysql": "^2.14.1"
   }
