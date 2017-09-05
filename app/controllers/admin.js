@@ -16,7 +16,6 @@ module.exports.savePost = (application, req, res) => {
     req.getValidationResult().then(function (result) {
         if (!result.isEmpty()) {
             console.log('--> Validation failed - /admin/addPost [POST]');
-            console.log(result.array());
             res.render('admin/addPost', { validationErrors: result.array(), post: newPost });
             return;
         }
