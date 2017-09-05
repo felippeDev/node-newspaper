@@ -1,11 +1,122 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <title>Node Newspaper</title>
-    </head>
-    <body>
-        <h1>Welcome to Newspaper</h1>
-        <h3>A new Node.js blog</h3>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Node newspaper</title>
+
+    <!-- JQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Application Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+                <img src="images/logo.png" />
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">HOME</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="noticia_wrapper">
+                    <span class="noticia_autor">Por Jorge</span>
+                    <a href="/post" class="noticia_titulo">Título da notícia</a>
+                    <span class="noticia_data">07/09/2016</span>
+                    <br />
+                    <p class="noticia_resumo">
+                        Aqui fica o resumo da notícia principal da página com um limite de 100 caracteres!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="noticia_wrapper">
+                    <span class="noticia_autor">Por Jorge</span>
+                    <a href="/post" class="noticia_titulo">Título da notícia</a>
+                    <span class="noticia_data">07/09/2016</span>
+
+                    <br />
+                    <p class="noticia_resumo">
+                        Aqui fica o resumo da notícia com um limite de 100 caracteres!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="noticia_wrapper">
+                    <span class="noticia_autor">Por Jorge</span>
+                    <a href="/post" class="noticia_titulo">Título da notícia</a>
+                    <span class="noticia_data">07/09/2016</span>
+                    <br />
+                    <p class="noticia_resumo">
+                        Aqui fica o resumo da notícia com um limite de 100 caracteres!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="noticia_wrapper">
+                    <span class="noticia_autor">Por Jorge</span>
+                    <a href="/post" class="noticia_titulo">Título da notícia</a>
+                    <span class="noticia_data">07/09/2016</span>
+
+                    <br />
+                    <p class="noticia_resumo">
+                        Aqui fica o resumo da notícia com um limite de 100 caracteres!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="noticia_wrapper">
+                    <span class="noticia_autor">Por Jorge</span>
+                    <a href="/post" class="noticia_titulo">Título da notícia</a>
+                    <span class="noticia_data">07/09/2016</span>
+
+                    <br />
+                    <p class="noticia_resumo">
+                        Aqui fica o resumo da notícia com um limite de 100 caracteres!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ver_mais">
+            <button type="button" class="btn btn-default"><a href="/posts">Ver todas as notícias</a></button>
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
 </html>
