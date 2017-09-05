@@ -8,40 +8,40 @@
         <h1>Add a new post</h1>
         <br />
 
-        <% if(validationErrors != undefined && validationErrors.length > 1) { %>
-            <% console.log('errors here!') %>
-            
+        <% if(validationErrors && validationErrors.length > 0) { %>
             <p style="color:red;">Some errors occoured:</p>
+            
             <ul>
-                <% for(var i = 0; i < validationErrors.length; i++) %>
-                <li style="color:red;"><%= validationErrors[i].message %></li>
+                <% for(var i = 0; i < validationErrors.length; i++) { %>
+                <li style="color:red;"><%= validationErrors[i].msg %></li>
+                <% } %>
             </ul>
         <% } %>
 
         <form action="/admin/addPost" method="POST">
             <label for="postTitle">Title</label>
             <br />
-            <input type="text" name="title" id="postTitle" placeholder="Post title">
+            <input type="text" name="title" id="postTitle" placeholder="Post title" value="<%= post.title %>">
             <br /><br />
             
             <label for="postAuthor">Author</label>
             <br />
-            <input type="text" name="author" id="postAuthor" placeholder="Post author name">
+            <input type="text" name="author" id="postAuthor" placeholder="Post author name" value="<%= post.author %>">
             <br /><br />
 
             <label for="postDate">Date</label>
             <br />
-            <input type="date" name="post_date" id="postDate" placeholder="Date of post">
+            <input type="date" name="post_date" id="postDate" placeholder="Date of post" value="<%= post.post_date %>">
             <br /><br />
             
             <label for="postSummary">Summary</label>
             <br />
-            <input type="text" name="summary" id="postSummary" placeholder="Post summary">
+            <input type="text" name="summary" id="postSummary" placeholder="Post summary" value="<%= post.summary %>">
             <br /><br />
 
             <label for="postContent">Content</label>
             <br />
-            <textarea name="content" id="postContent" placeholder="Type the post content.." cols="30" rows="10"></textarea>
+            <textarea name="content" id="postContent" placeholder="Type the post content.." cols="30" rows="10"><%= post.content %></textarea>
             <br /><br />
 
             <input type="submit" value="Submit">

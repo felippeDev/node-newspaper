@@ -1,10 +1,9 @@
-module.exports = (app) => {    
-    app.get('/posts', (req, res) => {
-        let connection = app.config.db();
-        let postsModel = new app.app.models.PostsDAO(connection);
+module.exports = (application) => {    
+    application.get('/posts', (req, res) => {
+        application.app.controllers.posts.listPosts(application, req, res);    
+    });
 
-        postsModel.getPosts((error, result) => {
-            res.render('posts/listPosts', {posts: result});
-        });
+    application.get('/post', (req, res) => {
+        application.app.controllers.posts.post(application, req, res);    
     });
 };
